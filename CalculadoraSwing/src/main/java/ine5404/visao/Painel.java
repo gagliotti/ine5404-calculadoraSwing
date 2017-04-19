@@ -91,6 +91,11 @@ public class Painel extends javax.swing.JPanel {
         add(jButton2);
 
         jButton3.setText("*");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tratarBotaoMultiplicarClicado(evt);
+            }
+        });
         add(jButton3);
 
         jButton4.setText("/");
@@ -135,6 +140,10 @@ public class Painel extends javax.swing.JPanel {
     private void tratarBotaoSubtrairClicado(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tratarBotaoSubtrairClicado
         this.entradaNumero1.getText();
     }//GEN-LAST:event_tratarBotaoSubtrairClicado
+
+    private void tratarBotaoMultiplicarClicado(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tratarBotaoMultiplicarClicado
+        JOptionPane.showConfirmDialog(null, "Ainda não implementado");
+    }//GEN-LAST:event_tratarBotaoMultiplicarClicado
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
