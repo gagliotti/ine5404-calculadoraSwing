@@ -18,7 +18,7 @@ public class Moldura extends JFrame {
     
     public Moldura(Controle controle){
         this.add(new Painel(controle));
-        this.pack();
-        this.setVisible(true);
+        this.pack(); //define o tamanho ideal do jframe
+        this.setVisible(true); //torna o jframe e seus componentes visiveis
     }
 }

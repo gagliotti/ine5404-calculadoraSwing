@@ -119,7 +119,7 @@ public class Painel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void somar(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_somar
-        Double soma = this.controle.soma(this.entradaNumero1.getText(), this.entradaNumero2.getText());
+        Double soma = this.controle.somar(this.entradaNumero1.getText(), this.entradaNumero2.getText());
         this.labelResultado.setText(soma.toString());
     }//GEN-LAST:event_somar
 

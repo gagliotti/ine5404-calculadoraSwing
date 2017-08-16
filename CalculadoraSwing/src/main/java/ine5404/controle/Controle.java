@@ -1,10 +1,8 @@
 package ine5404.controle;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+import ine5404.modelo.Calculadora;
+import ine5404.modelo.ICalculadora;
+
 
 
 /**
@@ -12,9 +10,27 @@ package ine5404.controle;
  * @author martin.vigil
  */
 public class Controle {
-    public Double soma(String entrada1, String entrada2){
+    protected ICalculadora calculadora;
+    
+    public Controle(){
+        this.calculadora = new Calculadora();
+    }
+    
+    public Double somar(String entrada1, String entrada2){
         Double numero1 = new Double(entrada1);
         Double numero2 = new Double(entrada2);
-        return numero1 + numero2;
+        return this.calculadora.somar(numero1, numero2);
+    }
+    
+     public Double subtrair(String entrada1, String entrada2){
+        Double numero1 = new Double(entrada1);
+        Double numero2 = new Double(entrada2);
+        return this.calculadora.subtrair(numero1, numero2);
+    }
+     
+       public Double dividir(String entrada1, String entrada2){
+        Double numero1 = new Double(entrada1);
+        Double numero2 = new Double(entrada2);
+        return this.calculadora.dividir(numero1, numero2);
     }
 }
